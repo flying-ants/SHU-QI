@@ -1,0 +1,15 @@
+/* 由于vue开发时会在style加上scoped避免全局污染，所以正常开发时直接修改外部组件（vant）的样式时会不生效，我们把scoped删除后会发现样式是可以生效的。但是scoped是肯定不能不要的。
+
+创建一个单独修改vant样式的页面，在里面修改你需要修改的vant默认样式 */
+
+/* classify页面，修改tab */
+.van-tab{
+    font-size: 16px !important;
+ }
+ /* 修改下划线的长度 */
+ .van-tabs__line{
+     width: 35px !important;
+ }
+ .van-tab :visited{
+    font-weight: bold !important;
+}
